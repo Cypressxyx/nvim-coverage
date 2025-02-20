@@ -165,6 +165,15 @@ Go supports the following configuration options:
     coverage_file: ~
         File that the plugin will try to read coverage from.
         Defaults to: `"coverage.out"`
+                                                            *nvim-coverage-java*
+Go supports the following configuration options:
+
+    coverage_file: ~
+        File that the plugin will try to read coverage from.
+        Defaults to: `"build/reports/jacoco/test/jacocoTestReport.xml"`
+    dir_prefix: ~
+        Java files directory prefix.
+        Defaults to: `"src/main/java"`
 
                                                     *nvim-coverage-javascript*
                                                     *nvim-coverage-typescript*
