@@ -32,6 +32,7 @@ Branch (partial) coverage support:
 | C#                    | :x: |
 | Dart                  | :heavy_check_mark: (untested) |
 | Go                    | :x: |
+| Java                  | :heavy_check_mark: |
 | Javascript/Typescript | :heavy_check_mark: |
 | Julia                 | :heavy_check_mark: (untested) |
 | Python                | :heavy_check_mark: |
@@ -88,6 +89,25 @@ Using lazyvim:
     end,
   },
 ```
+
+### Using Java
+In order to use the java coverage file, please ensure you include "nvim-neotest/neotest" as a dependency
+i.e
+```
+ {
+    "andythigpen/nvim-coverage",
+    dependencies = {
+      "nvim-neotest/neotest".
+    },
+    version = "*",
+    config = function()
+      require("coverage").setup({
+        auto_reload = true,
+      })
+    end,
+  },
+```
+
 
 ## Configuration
 
